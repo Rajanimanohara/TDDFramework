@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Test2(failed)">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="vtiger.ContactsTests.CreateContactTest">
+        <methods>
+          <include name="BC"/>
+          <include name="acConfig"/>
+          <include name="asConfig"/>
+          <include name="bsConfig"/>
+          <include name="bmConfig"/>
+          <include name="CreateContactTest"/>
+          <include name="amConfig"/>
+        </methods>
+      </class> <!-- vtiger.ContactsTests.CreateContactTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="3" parallel="tests" name="Test1(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="vtiger.OrganizationsTest.CreateOrganizationTest">
+        <methods>
+          <include name="BC"/>
+          <include name="regional"/>
+          <include name="acConfig"/>
+          <include name="demoScript"/>
+          <include name="asConfig"/>
+          <include name="bsConfig"/>
+          <include name="bmConfig"/>
+          <include name="amConfig"/>
+        </methods>
+      </class> <!-- vtiger.OrganizationsTest.CreateOrganizationTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
